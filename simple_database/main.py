@@ -32,10 +32,11 @@ class DataBase(object):
 
     @classmethod
     def create(cls, name):
-        pass
+        self.name = name
 
     def create_table(self, table_name, columns):
-        pass
+        Table = table(table_name)
+        self.columns = {}
 
     def show_tables(self):
         pass
